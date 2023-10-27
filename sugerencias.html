@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sugerencias</title>
+    <link rel="stylesheet" type="text/css" href="Style/stylesSS.css">
+
+</head>
+<body>
+    <form action="mailto:trista.josejoaquin.cb37@gmail.com" method="post" enctype="text/plain">
+        <h1>Sugerencias</h1>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="opinion">Opinión:</label>
+        <textarea id="opinion" name="opinion" rows="4" required></textarea><br>
+
+        <input type="submit" value="Enviar opinión">
+        <button onclick="irAPagina1()">Volver a la página de inicio</button>
+    </form>
+
+    
+
+    <script>
+        function irAPagina1() {
+            window.location.href = "pagina1.html";
+        }
+    </script>
+
+</body>
+</html>

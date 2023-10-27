@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Información sobre carros</title>
+        <link rel="stylesheet" type="text/css" href="Style/style.css">
+        <script src="https://kit.fontawesome.com/90479ba0be.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <header>
+            <h1>Información sobre carros</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#informacion">Información</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#formulario">Formulario</a></li>
+                <li><a href="sugerencias.html"> Sugerencias</a></li>
+            </ul>
+        </nav>
+
+        <section id="informacion">
+            <h2>Información</h2>
+            <h3>Información General</h2>
+            <p>El Nissan GT-R es un automóvil deportivo de alto rendimiento fabricado por Nissan. A continuación, se presentan algunos aspectos destacados de este icónico vehículo:</p>
+                
+            <h3>Rendimiento sobresaliente</h3>
+            <p>El GT-R es famoso por su increíble rendimiento. Está equipado con un motor V6 biturbo de 3.8 litros que produce una potencia impresionante, lo que le permite acelerar de 0 a 60 mph en aproximadamente 2.7 segundos. Además, su tracción en las cuatro ruedas y su sistema de transmisión de doble embrague contribuyen a un rendimiento excepcional en la pista.</p>
+                
+            <h3>Diseño aerodinámico</h3>
+            <p>El diseño del GT-R se ha centrado en la aerodinámica para garantizar una conducción estable a altas velocidades. Su aspecto distintivo incluye faros LED en forma de bumerán y un alerón trasero que mejora la estabilidad a altas velocidades.</p>
+                
+            <h3>Tecnología avanzada</h3>
+            <p>El Nissan GT-R está equipado con tecnología de vanguardia. Cuenta con un sistema de información y entretenimiento, una pantalla táctil, asistencia de conducción avanzada y un sistema de control de tracción ajustable que permite al conductor adaptar el rendimiento del vehículo según sus preferencias.</p>
+                
+            <h3>Heredero de una leyenda</h3>
+            <p>El GT-R es el sucesor del icónico Nissan Skyline GT-R, un automóvil legendario en el mundo de las carreras y las calles. El GT-R moderno ha mantenido la herencia de alto rendimiento de su predecesor y ha evolucionado con la tecnología contemporánea.</p>
+                
+            <h3>Reputación en el mundo del automovilismo</h3>
+            <p>El Nissan GT-R ha ganado un estatus de culto entre los entusiastas del automovilismo y ha establecido récords en numerosas pistas de carreras en todo el mundo. Su capacidad para ofrecer un rendimiento de clase mundial a un precio relativamente asequible lo ha convertido en un favorito en la comunidad automovilística.</p>
+        </section>
+
+        <section id="videos">
+            <div class="video-container">
+                <h2 class="video-title">Nissan GT-R R35</h2>
+                <video controls class="video-player" width="100%">
+                    <source src="video_imagen/R35.mp4" type="video/mp4">
+                    Tu navegador no admite la reproducción de videos.
+                </video>
+            </div>
+
+            <div class="video-container">
+                <h2 class="video-title">Nissan GT-R R34</h2>
+                <video controls class="video-player" width="100%">
+                    <source src="video_imagen/R34.mp4" type="video/mp4">
+                    Tu navegador no admite la reproducción de videos.
+                </video>
+            </div>
+        </section>
+
+        <section id="formulario">
+            <form id="opinion-form">
+            <h3>Opina sobre nuestra página:</h3>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="opinion">Opinión:</label>
+            <textarea id="opinion" name="opinion" rows="4" required></textarea>
+
+            <center><input type="submit" value="Enviar opinión" onclick="limpiarFormulario()"></center>
+        </form>
+        </section>
+
+        <footer>
+            <h3>Redes Sociales</h3>
+            <a href="https://www.facebook.com/profile.php?id=100008944697025"><i class="fab fa-facebook"></i>&nbsp;facebook&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a href="https://www.instagram.com/jose_tristar"><i class="fab fa-instagram"></i>&nbsp;instagram&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a href="https://www.youtube.com/channel/UCJFAIxYKn8DbE49RLcM4WCg"><i class="fab fa-youtube"></i>&nbsp;youtube&nbsp;&nbsp;&nbsp;&nbsp;</a> 
+            <a href="https://www.twitch.tv/cubaniuxyt"><i class="fab fa-twitch"></i>&nbsp;twitch&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <p>Datos sobre el sitio web</p>
+        </footer>
+
+        <script>
+        function limpiarFormulario() { 
+            document.getElementById("nombre").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("opinion").value = "";
+        }
+        </script>
+    </body>
+</html>
